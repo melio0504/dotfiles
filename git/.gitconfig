@@ -1,0 +1,18 @@
+[user]
+	name = melio0504
+	email = 82772382+melio0504@users.noreply.github.com
+	signingkey = 2A0D4F063D341E80
+[init]
+	defaultBranch = main
+[pull]
+	rebase = false
+[core]
+	editor = code --wait
+[color]
+	ui = auto
+[commit]
+	gpgsign = true
+[gpg]
+	program = gpg
+[help]
+	autocorrect = prompt
