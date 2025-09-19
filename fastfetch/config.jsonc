@@ -1,0 +1,47 @@
+{
+  "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/master/doc/json_schema.json",
+  "display": {
+    "size": {
+      "binaryPrefix": "jedec",
+      "maxPrefix": "GB"
+    }
+  },
+  "logo": {
+    "type": "auto",
+    "source": "/home/melio/.config/fastfetch/mylogo.txt",
+    "padding": {
+      "top": 1,
+      "left": 2
+    }
+  },
+  "modules": [
+    "title",
+    "separator",
+    "os",
+    "host",
+    "kernel",
+    "uptime",
+    "packages",
+    "shell",
+    "display",
+    "de",
+    "wm",
+    "wmtheme",
+    "theme",
+    "icons",
+    "font",
+    "cursor",
+    "terminal",
+    "terminalfont",
+    "cpu",
+    "gpu",
+    "memory",
+    "swap",
+    "disk",
+    "localip",
+    "battery",
+    "poweradapter",
+    "break",
+    "colors"
+  ]
+}
