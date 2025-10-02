@@ -10,11 +10,27 @@
 	editor = code --wait
 [color]
 	ui = auto
+[column]
+	ui = auto
 [commit]
 	gpgsign = true
+	verbose = true
+[alias]
+	st = status
+	co = checkout
+	br = branch
+    ci = commit
+    df = diff
+    lg = log --oneline --graph --all --decorate
+    uncommit = reset --soft HEAD~1
+    undo = reset --hard HEAD~1
+    amend = commit --amend
+[tag]
+	sort = version:refname
 [gpg]
 	program = gpg
 [help]
 	autocorrect = prompt
 [push]
 	autoSetupRemote = true
+	followTags = true
