@@ -19,7 +19,7 @@
 	st = status
 	co = checkout
 	br = branch
-    ci = commit
+    ci = commit -m
     df = diff
     lg = log --oneline --graph --all --decorate
     uncommit = reset --soft HEAD~1
