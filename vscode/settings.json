@@ -1,0 +1,37 @@
+{
+  "editor.minimap.showSlider": "always",
+  "liveServer.settings.donotShowInfoMsg": true,
+  "debug.onTaskErrors": "abort",
+  "git.confirmSync": false,
+  "explorer.confirmDragAndDrop": false,
+  "workbench.iconTheme": "vscode-icons",
+  "[html]": {
+    "editor.defaultFormatter": "vscode.html-language-features"
+  },
+  "liveServer.settings.donotVerifyTags": true,
+  "editor.hover.enabled": false,
+  "vsicons.dontShowNewVersionMessage": true,
+  "explorer.confirmDelete": false,
+  "workbench.startupEditor": "none",
+  "editor.cursorStyle": "block",
+  "redhat.telemetry.enabled": false,
+  "git.openRepositoryInParentFolders": "always",
+  "editor.minimap.enabled": false,
+  "liveServer.settings.host": "localhost",
+  "editor.fontSize": 22,
+  "workbench.editor.empty.hint": "hidden",
+  "workbench.secondarySideBar.defaultVisibility": "hidden",
+  "workbench.colorCustomizations": {
+    "editorCursor.foreground": "#ffea00",
+    "editor.selectionBackground": "#88888844"
+  },
+  "editor.fontFamily": "'Iosevka'",
+  "terminal.integrated.fontFamily": "'monospace'",
+  "liveServer.settings.CustomBrowser": "chrome:PrivateMode",
+  "window.zoomLevel": 2,
+  "python.defaultInterpreterPath": "/bin/python3",
+  "security.workspace.trust.untrustedFiles": "open",
+  "editor.wordWrap": "on",
+  "containers.containerClient": "com.microsoft.visualstudio.containers.docker",
+  "containers.orchestratorClient": "com.microsoft.visualstudio.orchestrators.dockercompose"
+}
