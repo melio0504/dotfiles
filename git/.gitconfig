@@ -12,6 +12,8 @@
 	ui = auto
 [column]
 	ui = auto
+[branch]
+	sort = -committerdate
 [commit]
 	gpgsign = true
 	verbose = true
