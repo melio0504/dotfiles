@@ -7,7 +7,9 @@ I like keeping things minimal but functional, so everything here is tuned for co
 ## Current setup
 ### Laptop: ThinkPad T480
 
-A wonderful laptop that handles everything I need. I don’t really mind that it only has an 8th-gen CPU. I haven’t even come close to pushing it to its limits. It’s reliable, solid, and I plan to stick with it for a long time.
+A wonderful laptop that handles everything I need. I don’t really mind that it only has an 8th-gen CPU. 
+
+I haven’t even come close to pushing it to its limits. It’s reliable, solid, and I plan to stick with it for a long time.
 
 ### OS: Ubuntu 22.04.5 LTS
 
