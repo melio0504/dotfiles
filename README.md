@@ -5,14 +5,16 @@ This repository contains my personal configuration files used for my web develop
 ### Screenshot
 ![Setup](/setup-snapshot/10-10-25.png)
 
-### _ThinkPad T480_
+### Machine: ThinkPad T480
 
 A wonderful laptop that handles everything I need. I don’t really mind that it only has an 8th-gen CPU.  I haven’t even come close to pushing it to its limits. It’s reliable, solid, and I plan to stick with it for a long time.
 
-### _Ubuntu 22.04.5 LTS_
+### OS: Ubuntu 22.04.5 LTS
 
 Why not use other distros like Arch or Fedora?
 
-Because I genuinely enjoy Ubuntu’s out-of-the-box experience. Its customized GNOME setup just works.  I’ve also removed Snap from my system, so I only use dpkg and Flatpak for managing packages.
+Because I genuinely enjoy Ubuntu’s out-of-the-box experience. Its customized GNOME setup just works for me and I’ve also removed Snap from my system (since its so slow lmao), so I only use Debian package and Flatpak for managing packages.
 
-I’ve tried Debian and Fedora before, but honestly, I don’t have the time to tinker endlessly with configs. I just want to sit down, code, and get things done. Simply lovely.
+I’ve tried Debian and Fedora before, but honestly, I don’t have the time to tinker endlessly with configs. I just want to sit down, code, and get things done.
+
+Lastly, because this has Long Term Support, I can use this workflow until 2027! How great is that!
