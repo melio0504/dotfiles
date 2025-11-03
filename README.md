@@ -3,7 +3,7 @@
 This repository contains my personal configuration files used for my web development environment. I like keeping things minimal but functional, so everything here is tuned for comfort and productivity.
 
 ### Screenshot
-![Setup](/setup-snapshot/10-10-25.png)
+![Setup](/setup-snapshot/11-03-25.png)
 
 ### Machine: ThinkPad T480
 
