@@ -2,10 +2,8 @@
 
 This repository contains my personal configuration files used for my programming environment. I like keeping things minimal but functional, so everything here is tuned for my comfort and productivity.
 
-### Screenshot
+### Snapshot
 ![Setup](/setup-snapshot/11-16-25.png)
-
-### Current Setup
 
 **Machine: ThinkPad T480**
 
