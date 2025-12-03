@@ -1,3 +1,8 @@
+/* 
+  Add this into /home/melio/.config/gtk-3.0
+  This will make the terminal menu-bar disappear
+*/
+
 /* delete header terminal */
 terminal-window headerbar *,
 terminal-window .titlebar
