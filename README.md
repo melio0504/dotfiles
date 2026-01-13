@@ -3,7 +3,7 @@
 This repository contains my personal configuration files used for my programming environment. I like keeping things minimal but functional, so everything here is tuned for my comfort and productivity.
 
 ### Snapshot
-![Setup](/setup-snapshot/01-11-26.png)
+![Setup](/setup-snapshot/01-13-26.png)
 
 **Machine: ThinkPad T480**
 
@@ -12,4 +12,5 @@ This repository contains my personal configuration files used for my programming
 
 **OS: Debian 13 Trixie**
 
-- I like to be minimal with my setup.
+- I chose Debian because of its stability and clean, minimal base, which allows full control over what runs on the system without unnecessary packages or services.
+- Performs reliably on my machine, offering excellent performance, battery efficiency, and a distraction-free environment for development.
