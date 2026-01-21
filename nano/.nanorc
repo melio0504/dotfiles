@@ -1,10 +1,6 @@
 set mouse
-
 set tabsize 2
-
 set softwrap
 set atblanks
-
 set autoindent
-
 set linenumbers
