@@ -2,15 +2,12 @@
 
 This repository contains my personal configuration files used for my programming environment. I like keeping things minimal but functional, so everything here is tuned for my comfort and productivity.
 
-### Snapshot
-![Setup](/setup-snapshot/01-30-26.png)
+![Setup](/setup-snapshot/02-02-26.png)
 
-**Machine: ThinkPad T480**
+**ThinkPad T480**
 
-- A versatile and reliable laptop that handles all my tasks effortlessly. Despite having an 8th Gen Intel CPU (2018), I’ve never come close to maxing it out.
-- Features ThinkPad’s PowerBridge Technology with two internal batteries, allowing 8–10 hours of continuous work. I also plan to add a spare external battery for extended battery life.
+My ThinkPad is still a beast. Even with an older CPU, this thing still absolutely cooks. It’s the last of its kind with PowerBridge dual-battery tech, giving me a solid 8–10 hours of life. I’m still obsessed with the classic black-and-red look, that world-class keyboard feel, and the matte screen that keeps glare at bay. They really don't make them like this anymore.
 
-**OS: Debian 13 Trixie**
+**Debian 13 (Trixie)**
 
-- I chose Debian because of its stability and clean, minimal base, which allows full control over what runs on the system without unnecessary packages or services.
-- Performs reliably on my machine, offering excellent performance, battery efficiency, and a distraction-free environment for development.
+As one of the oldest and most respected distributions, Debian is my top choice for its stability and minimal base. It grants me total control over my system, free from unnecessary bloat. On my machine, Debian delivers exceptional performance and battery efficiency, creating a distraction-free environment for development. As a bonus, I’ve always found the Toy Story naming convention incredibly charming.
