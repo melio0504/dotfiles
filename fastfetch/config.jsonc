@@ -8,13 +8,15 @@
   },
   "logo": {
     "type": "auto",
-    "source": "/home/melio/.config/fastfetch/mylogo.txt",
+    "source": "/home/melio/.config/fastfetch/image.jpeg",
+    "width": 30,
     "padding": {
       "top": 1,
       "left": 2
     }
   },
   "modules": [
+    "break",
     "title",
     "separator",
     "os",
