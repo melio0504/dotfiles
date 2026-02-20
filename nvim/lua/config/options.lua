@@ -8,4 +8,5 @@ vim.opt.guicursor = {
   "n-v-c:block-blinkon500-blinkoff500-blinkwait200",
   "i-ci-ve:block-blinkon500-blinkoff500-blinkwait200",
   "r-cr:hor20-blinkon500-blinkoff500-blinkwait200",
+  "t:block-blinkon500-blinkoff500-blinkwait200",
 }
