@@ -10,3 +10,7 @@ vim.opt.guicursor = {
   "r-cr:hor20-blinkon500-blinkoff500-blinkwait200",
   "t:block-blinkon500-blinkoff500-blinkwait200",
 }
+
+vim.opt.wrap = true
+
+vim.opt.linebreak = true
