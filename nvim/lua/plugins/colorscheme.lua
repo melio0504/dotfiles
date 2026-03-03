@@ -1,17 +1,15 @@
 return {
   {
-    "catppuccin/nvim",
-    name = "catppuccin",
+    "wtfox/jellybeans.nvim",
+    name = "jellybeans",
+    lazy = false,
     priority = 1000,
-    opts = {
-      flavour = "mocha",
-    },
+    opts = {},
   },
-
   {
     "LazyVim/LazyVim",
     opts = {
-      colorscheme = "catppuccin",
+      colorscheme = "jellybeans",
     },
   },
 }
