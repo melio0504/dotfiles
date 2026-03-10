@@ -14,3 +14,7 @@ vim.opt.guicursor = {
 vim.opt.wrap = true
 
 vim.opt.linebreak = true
+
+vim.opt.timeoutlen = 200
+vim.opt.ttimeoutlen = 10
+vim.opt.updatetime = 200
