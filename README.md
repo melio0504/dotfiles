@@ -1,13 +1,13 @@
 ## My Setup
 
-This repository contains my personal configuration files used for my programming environment. I like keeping things minimal but functional, so everything here is tuned for my comfort and productivity.
+This repository contains my personal configuration files used for my programming environment. I like keeping things minimal but functional, so everything here is tuned for comfort, efficiency, and just enough personality to keep me sane.
 
-![Setup](/setup-snapshot/03-22-26.png)
+![Setup](/setup-snapshot/03-26-26.png)
 
 **ThinkPad T480**
 
-My ThinkPad is still a beast. Even with an older CPU, this thing still absolutely cooks. It’s the last of its kind with PowerBridge dual-battery tech, giving me a solid 8–10 hours of life. I’m still obsessed with the classic black-and-red look with its world-class keyboard feel, and the matte screen.
+One thing for me is I have a soft spot for ThinkPads especially the older ones. There’s something about their simplicity, repairability, and durability that just makes sense for my dumb brain. And the keyboard? Still one of the best. I’m still currently using a T480 (yes, from 2018 and still going strong). One feature I genuinely appreciate is the PowerBridge dual-battery system: an internal battery paired with a removable external one. In practice, that means I can comfortably push past 8 hours of usage without worrying too much.
 
 **Debian 13 (Trixie)**
 
-As one of the oldest and most respected distributions, Debian is my top choice for its stability and minimal base. It grants me total control over my system, free from unnecessary bloat. In my T480, Debian delivers exceptional performance and battery efficiency, creating a distraction-free environment for development. And also, I’ve always found the Toy Story naming convention incredibly charming.
+Debian remains my distro of choice. It’s one of the oldest and most respected Linux distributions for a reason: stability, minimalism, and full control. On this T480, Debian runs exceptionally well with smooth performance, solid battery efficiency, and no unnecessary distractions. Just a clean, focused environment where I can get things done without fighting my operating system. Also, I will never get tired of the Toy Story naming scheme. That alone might be worth a few extra loyalty points.
