@@ -7,9 +7,13 @@
     }
   },
   "logo": {
+    "source": "/home/melio/.config/fastfetch/logo.txt",
+    "color": {
+      "1": "white"
+    },
     "padding": {
-      "top": 1,
-      "left": 2
+      "top": 2,
+      "left": 5
     }
   },
   "modules": [
