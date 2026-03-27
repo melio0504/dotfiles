@@ -53,14 +53,30 @@ if ! shopt -oq posix; then
 fi
 
 # nvim
-export PATH="$PATH:/opt/nvim/"
-
+export PATH="$PATH:/opt/nvim"
 alias n='nvim .'
 
-# nvm
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"                   # This loads nvm
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion" # This loads nvm bash_completion
+# This should make nvm activate when first use. My god. The shell was so slow to load before.
+nvm() {
+  unset -f nvm
+  export NVM_DIR="$HOME/.nvm"
+  [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
+  nvm "$@"
+}
+
+node() {
+  unset -f nvm node npm npx
+  export NVM_DIR="$HOME/.nvm"
+  [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
+  node "$@"
+}
+
+npm() {
+  unset -f nvm node npm npx
+  export NVM_DIR="$HOME/.nvm"
+  [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
+  npm "$@"
+}
 
 # pnpm
 export PNPM_HOME="/home/melio/.local/share/pnpm"
@@ -84,8 +100,3 @@ export PATH=$PATH:$ANDROID_HOME/platform-tools
 
 # spicetify
 export PATH=$PATH:~/.spicetify
-
-# Created by `pipx` on 2026-02-23 06:40:54
-export PATH="$PATH:/home/melio/.local/bin"
-
-export PATH=$PATH:/home/melio/.spicetify
