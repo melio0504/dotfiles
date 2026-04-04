@@ -52,6 +52,12 @@ if ! shopt -oq posix; then
   fi
 fi
 
+# eza
+alias ls="eza -lhT --icons --color=never --level=1 --ignore-glob='node_modules|.git|dist|build|.next|.nuxt|coverage'"
+alias la="eza -lhaT --icons --color=never --level=1 --ignore-glob='node_modules|.git|dist|build|.next|.nuxt|coverage'"
+alias lt="eza -lhaT --icons --color=never --level=2 --ignore-glob='node_modules|.git|dist|build|.next|.nuxt|coverage'"
+alias lr="eza -lhaT --icons --color=never --ignore-glob='node_modules|.git|dist|build|.next|.nuxt|coverage'"
+
 # nvim
 export PATH="$PATH:/opt/nvim"
 alias n='nvim .'
