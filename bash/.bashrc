@@ -34,13 +34,6 @@ if [ -z "${debian_chroot:-}" ] && [ -r /etc/debian_chroot ]; then
   debian_chroot=$(cat /etc/debian_chroot)
 fi
 
-# enable color support of ls and also add handy aliases
-if [ -x /usr/bin/dircolors ]; then
-  test -r ~/.dircolors && eval "$(dircolors -b ~/.dircolors)" || eval "$(dircolors -b)"
-  alias ls='ls --color=auto'
-  alias grep='grep --color=auto'
-fi
-
 # enable programmable completion features (you don't need to enable
 # this, if it's already enabled in /etc/bash.bashrc and /etc/profile
 # sources /etc/bash.bashrc).
@@ -52,17 +45,43 @@ if ! shopt -oq posix; then
   fi
 fi
 
-# eza
-alias ls="eza -lhT --icons --color=never --level=1 --ignore-glob='node_modules|.git|dist|build|.next|.nuxt|coverage'"
-alias la="eza -lhaT --icons --color=never --level=1 --ignore-glob='node_modules|.git|dist|build|.next|.nuxt|coverage'"
-alias lt="eza -lhaT --icons --color=never --level=2 --ignore-glob='node_modules|.git|dist|build|.next|.nuxt|coverage'"
-alias lr="eza -lhaT --icons --color=never --ignore-glob='node_modules|.git|dist|build|.next|.nuxt|coverage'"
+# eza - replacement for ls
+
+# Normal listing
+alias ls="eza -lhT --time-style='+%Y-%m-%d | %H:%M' \
+           --icons --color=never --level=1 \
+           --ignore-glob='node_modules|.git|dist|build|.next|.nuxt|coverage'"
+
+# With hidden files
+alias la="eza -lhaT --time-style='+%Y-%m-%d | %H:%M' \
+          --icons --color=never --level=1 \
+          --ignore-glob='node_modules|.git|dist|build|.next|.nuxt|coverage'"
+
+# Sorted by size (from lowest to highest)
+alias lsize="eza -lhaT --time-style='+%Y-%m-%d | %H:%M' --total-size --sort=size \
+            --icons --color=never --level=1 \
+            --ignore-glob='node_modules|.git|dist|build|.next|.nuxt|coverage'"
+
+# Sorted by time (from oldest to newest)
+alias ltime="eza -lhaT --time-style='+%Y-%m-%d | %H:%M' --sort=modified \
+            --icons --color=never --level=1 \
+            --ignore-glob='node_modules|.git|dist|build|.next|.nuxt|coverage'"
+
+# List with two levels
+alias ll="eza -lhaT --time-style='+%Y-%m-%d | %H:%M' \
+          --icons --color=never --level=2 \
+          --ignore-glob='node_modules|.git|dist|build|.next|.nuxt|coverage'"
+
+# All aboard the train choo choo
+alias lt="eza -lhaT --time-style='+%Y-%m-%d | %H:%M' \
+          --icons --color=never \
+          --ignore-glob='node_modules|.git|dist|build|.next|.nuxt|coverage'"
 
 # nvim
 export PATH="$PATH:/opt/nvim"
 alias n='nvim .'
 
-# This should make nvm activate when first use. My god. The shell was so slow to load before.
+# To first use node, I need to first execute one of these
 nvm() {
   unset -f nvm
   export NVM_DIR="$HOME/.nvm"
