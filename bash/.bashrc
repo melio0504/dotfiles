@@ -48,32 +48,32 @@ fi
 # eza - replacement for ls
 
 # Normal listing
-alias ls="eza -lhT --time-style='+%Y-%m-%d | %H:%M' \
+alias ls="eza -lT --time-style='+%Y-%m-%d | %H:%M' --no-user \
            --icons --color=never --level=1 \
            --ignore-glob='node_modules|.git|dist|build|.next|.nuxt|coverage'"
 
 # With hidden files
-alias la="eza -lhaT --time-style='+%Y-%m-%d | %H:%M' \
+alias la="eza -la --time-style='+%Y-%m-%d | %H:%M' --no-user \
           --icons --color=never --level=1 \
           --ignore-glob='node_modules|.git|dist|build|.next|.nuxt|coverage'"
 
 # Sorted by size (from lowest to highest)
-alias lsize="eza -lhaT --time-style='+%Y-%m-%d | %H:%M' --total-size --sort=size \
+alias lsize="eza -la --time-style='+%Y-%m-%d | %H:%M' --total-size --sort=size --no-user \
             --icons --color=never --level=1 \
             --ignore-glob='node_modules|.git|dist|build|.next|.nuxt|coverage'"
 
 # Sorted by time (from oldest to newest)
-alias ltime="eza -lhaT --time-style='+%Y-%m-%d | %H:%M' --sort=modified \
+alias ltime="eza -la --time-style='+%Y-%m-%d | %H:%M' --sort=modified --no-user\
             --icons --color=never --level=1 \
             --ignore-glob='node_modules|.git|dist|build|.next|.nuxt|coverage'"
 
 # List with two levels
-alias ll="eza -lhaT --time-style='+%Y-%m-%d | %H:%M' \
+alias ll="eza -laT --time-style='+%Y-%m-%d | %H:%M' --no-user \
           --icons --color=never --level=2 \
           --ignore-glob='node_modules|.git|dist|build|.next|.nuxt|coverage'"
 
 # All aboard the train choo choo
-alias lt="eza -lhaT --time-style='+%Y-%m-%d | %H:%M' \
+alias lt="eza -laT --time-style='+%Y-%m-%d | %H:%M' --no-user \
           --icons --color=never \
           --ignore-glob='node_modules|.git|dist|build|.next|.nuxt|coverage'"
 
