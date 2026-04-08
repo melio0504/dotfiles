@@ -7,6 +7,7 @@ return {
     picker = {
       sources = {
         explorer = {
+          follow_file = false,
           layout = {
             layout = {
               width = 30,
