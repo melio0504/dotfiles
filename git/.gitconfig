@@ -21,12 +21,17 @@
 	st = status
 	co = checkout
 	br = branch
-    ci = commit -m
-    df = diff
-    lg = log --oneline --graph --all --decorate
-    uncommit = reset --soft HEAD~1
-    undo = reset --hard HEAD~1
-    amend = commit --amend
+	ci = commit -m
+	df = diff
+	lg = log --oneline --graph --all --decorate
+	uncommit = reset --soft HEAD~1
+	undo = reset --hard HEAD~1
+	amend = commit --amend
+	churn = !git log --format=format: --name-only --since=\"1 year ago\" | sort | uniq -c | sort -nr | head -20
+	contri = !git shortlog -sn --no-merges
+	wbug = !git log -i -E --grep=\"fix|bug|broken\" --name-only --format='' | sort | uniq -c | sort -nr | head -20
+	chist = !git log --format='%ad' --date=format:'%Y-%m' | sort | uniq -c
+	ehist = !git log --oneline --since=\"1 year ago\" | grep -iE 'revert|hotfix|emergency|rollback'
 [tag]
 	sort = version:refname
 [gpg]
