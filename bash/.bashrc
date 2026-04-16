@@ -50,58 +50,43 @@ fi
 # Normal listing
 alias ls="eza -lT --time-style='+%Y-%m-%d | %H:%M' --no-user \
            --icons --color=never --level=1 \
-           --ignore-glob='node_modules|.git|dist|build|.next|.nuxt|coverage'"
+           --ignore-glob='node_modules|.git'"
 
 # With hidden files
 alias la="eza -la --time-style='+%Y-%m-%d | %H:%M' --no-user \
           --icons --color=never --level=1 \
-          --ignore-glob='node_modules|.git|dist|build|.next|.nuxt|coverage'"
+          --ignore-glob='node_modules|.git'"
 
 # Sorted by size (from lowest to highest)
 alias lsize="eza -la --time-style='+%Y-%m-%d | %H:%M' --total-size --sort=size --no-user \
             --icons --color=never --level=1 \
-            --ignore-glob='node_modules|.git|dist|build|.next|.nuxt|coverage'"
+            --ignore-glob='node_modules|.git'"
 
 # Sorted by time (from oldest to newest)
-alias ltime="eza -la --time-style='+%Y-%m-%d | %H:%M' --sort=modified --no-user\
+alias ltime="eza -la --time-style='+%Y-%m-%d | %H:%M' --sort=modified --no-user \
             --icons --color=never --level=1 \
-            --ignore-glob='node_modules|.git|dist|build|.next|.nuxt|coverage'"
+            --ignore-glob='node_modules|.git'"
 
 # List with two levels
 alias ll="eza -laT --time-style='+%Y-%m-%d | %H:%M' --no-user \
           --icons --color=never --level=2 \
-          --ignore-glob='node_modules|.git|dist|build|.next|.nuxt|coverage'"
+          --ignore-glob='node_modules|.git'"
 
 # All aboard the train choo choo
 alias lt="eza -laT --time-style='+%Y-%m-%d | %H:%M' --no-user \
           --icons --color=never \
-          --ignore-glob='node_modules|.git|dist|build|.next|.nuxt|coverage'"
+          --ignore-glob='node_modules|.git'"
 
 # nvim
 export PATH="$PATH:/opt/nvim"
 alias n='nvim .'
 
-# To first use node, I need to first execute one of these
-nvm() {
-  unset -f nvm
-  export NVM_DIR="$HOME/.nvm"
-  [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
-  nvm "$@"
-}
-
-node() {
-  unset -f nvm node npm npx
-  export NVM_DIR="$HOME/.nvm"
-  [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
-  node "$@"
-}
-
-npm() {
-  unset -f nvm node npm npx
-  export NVM_DIR="$HOME/.nvm"
-  [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
-  npm "$@"
-}
+# fnm
+FNM_PATH="/home/melio/.local/share/fnm"
+if [ -d "$FNM_PATH" ]; then
+  export PATH="$FNM_PATH:$PATH"
+  eval "$(fnm env --shell bash)"
+fi
 
 # pnpm
 export PNPM_HOME="/home/melio/.local/share/pnpm"
@@ -125,3 +110,7 @@ export PATH=$PATH:$ANDROID_HOME/platform-tools
 
 # spicetify
 export PATH=$PATH:~/.spicetify
+
+# rust
+export PATH="$PATH:$HOME/.config/composer/vendor/bin"
+. "$HOME/.cargo/env"
