@@ -11,9 +11,6 @@ esac
 # Show only last 2 directories in the path
 PROMPT_DIRTRIM=2
 
-# Colored PS1
-PS1="\[\e[32m\]\u@\h\[\e[0m\]:\[\e[34m\]\w\[\e[0m\]\$ "
-
 # don't put duplicate lines or lines starting with space in the history.
 # See bash(1) for more options
 HISTCONTROL=ignoreboth
