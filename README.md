@@ -2,7 +2,7 @@
 
 This repository contains my personal configuration files used for my programming environment. I like keeping things minimal but functional, so everything here is tuned for comfort, efficiency, and just enough personality to keep me sane.
 
-![Setup](/setup-snapshot/04-23-26.png)
+![Setup](/setup-snapshot/04-25-26.png)
 
 **ThinkPad T480**
 
