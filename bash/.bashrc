@@ -1,7 +1,3 @@
-# ~/.bashrc: executed by bash(1) for non-login shells.
-# see /usr/share/doc/bash/examples/startup-files (in the package bash-doc)
-# for examples
-
 # If not running interactively, don't do anything
 case $- in
 *i*) ;;
@@ -10,6 +6,9 @@ esac
 
 # Show only last 2 directories in the path
 PROMPT_DIRTRIM=2
+
+# Add [] around prompt
+PS1='[\u@\h \w]\$ '
 
 # don't put duplicate lines or lines starting with space in the history.
 # See bash(1) for more options
@@ -45,37 +44,26 @@ fi
 # eza - replacement for ls
 
 # Normal listing
-alias ls="eza -lT --time-style='+%Y-%m-%d | %H:%M' --no-user \
-           --icons --color=never --level=1 \
-           --ignore-glob='node_modules|.git'"
+alias ls="eza -lT --icons --color=never --level=1"
 
 # With hidden files
-alias la="eza -la --time-style='+%Y-%m-%d | %H:%M' --no-user \
-          --icons --color=never --level=1 \
-          --ignore-glob='node_modules|.git'"
+alias la="eza -lTa --icons --color=never --level=1"
 
 # Sorted by size (from lowest to highest)
-alias lsize="eza -la --time-style='+%Y-%m-%d | %H:%M' --total-size --sort=size --no-user \
-            --icons --color=never --level=1 \
-            --ignore-glob='node_modules|.git'"
+alias lsize="eza -lTa --total-size --sort=size --no-user \
+            --icons --color=never --level=1"
 
 # Sorted by time (from oldest to newest)
-alias ltime="eza -la --time-style='+%Y-%m-%d | %H:%M' --sort=modified --no-user \
-            --icons --color=never --level=1 \
-            --ignore-glob='node_modules|.git'"
+alias ltime="eza -lTa --sort=modified --icons --color=never --level=1"
 
 # List with two levels
-alias ll="eza -laT --time-style='+%Y-%m-%d | %H:%M' --no-user \
-          --icons --color=never --level=2 \
-          --ignore-glob='node_modules|.git'"
+alias ll="eza -lTa --icons --color=never --level=2"
 
 # All aboard the train choo choo
-alias lt="eza -laT --time-style='+%Y-%m-%d | %H:%M' --no-user \
-          --icons --color=never \
-          --ignore-glob='node_modules|.git'"
+alias lt="eza -laT --icons --color=never"
 
 # nvim
-export PATH="$PATH:/opt/nvim"
+export PATH="$PATH:/opt/nvim/bin"
 alias n='nvim .'
 
 # fnm
