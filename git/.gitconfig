@@ -7,7 +7,7 @@
 [pull]
 	rebase = false
 [core]
-	editor = code --wait
+	editor = nvim
 [color]
 	ui = auto
 [column]
