@@ -7,43 +7,159 @@
     }
   },
   "logo": {
+    "type": "file",
     "source": "/home/melio/.config/fastfetch/logo.txt",
     "color": {
       "1": "white"
     },
     "padding": {
-      "top": 2,
-      "left": 5
+      "top": 3,
+      "left": 12,
+      "right": 6
     }
   },
   "modules": [
-    "title",
-    "separator",
-    "os",
-    "host",
-    "kernel",
-    "uptime",
-    "packages",
-    "shell",
-    "display",
-    "de",
-    "wm",
-    "wmtheme",
-    "theme",
-    "icons",
-    "font",
-    "cursor",
-    "terminal",
-    "terminalfont",
-    "cpu",
-    "gpu",
-    "memory",
-    "swap",
-    "disk",
-    "localip",
-    "battery",
-    "poweradapter",
-    "break",
-    "colors"
+    {
+      "type": "custom",
+      "format": "\u001b[90m┌──────────────────── Hardware ────────────────────┐"
+    },
+    {
+      "type": "host",
+      "key": " Host",
+      "keyColor": "red"
+    },
+    {
+      "type": "cpu",
+      "key": "│ ├ CPU",
+      "showPeCoreCount": true,
+      "keyColor": "red"
+    },
+    {
+      "type": "gpu",
+      "key": "│ ├ GPU",
+      "detectionMethod": "pci",
+      "keyColor": "red",
+      "format": "{name} @ {frequency}"
+    },
+    {
+      "type": "display",
+      "key": "│ ├󱄄 Display",
+      "keyColor": "red"
+    },
+    {
+      "type": "memory",
+      "key": "│ ├ Memory",
+      "keyColor": "red"
+    },
+    {
+      "type": "swap",
+      "key": "│ ├󰓡 Swap",
+      "keyColor": "red"
+    },
+    {
+      "type": "disk",
+      "key": "│ ├󰋊 Disk",
+      "keyColor": "red"
+    },
+    {
+      "type": "battery",
+      "key": "└ └󰂄 Battery",
+      "keyColor": "red"
+    },
+    {
+      "type": "custom",
+      "format": "\u001b[90m└──────────────────────────────────────────────────┘"
+    },
+    {
+      "type": "custom",
+      "format": "\u001b[90m┌──────────────────── Software ────────────────────┐"
+    },
+    {
+      "type": "os",
+      "key": "󰣚 OS",
+      "keyColor": "red"
+    },
+    {
+      "type": "kernel",
+      "key": "│ ├ Kernel",
+      "keyColor": "red"
+    },
+    {
+      "type": "shell",
+      "key": "│ ├ Shell",
+      "keyColor": "red"
+    },
+    {
+      "type": "packages",
+      "key": "└ └󰏖 Packages",
+      "keyColor": "red"
+    },
+    {
+      "type": "de",
+      "key": "│ ├󰧨 DE",
+      "keyColor": "red"
+    },
+    {
+      "type": "wm",
+      "key": "│ ├ WM",
+      "keyColor": "red"
+    },
+    {
+      "type": "theme",
+      "key": "│ ├󰸌 Theme",
+      "keyColor": "red"
+    },
+    {
+      "type": "icons",
+      "key": "│ ├󰀻 Icons",
+      "keyColor": "red"
+    },
+    {
+      "type": "font",
+      "key": "│ ├ Font",
+      "keyColor": "red"
+    },
+    {
+      "type": "cursor",
+      "key": "│ ├󰇀 Cursor",
+      "keyColor": "red"
+    },
+    {
+      "type": "terminal",
+      "key": "│ ├ Terminal",
+      "keyColor": "red"
+    },
+    {
+      "type": "terminalfont",
+      "key": "│ ├ Terminal Font",
+      "keyColor": "red"
+    },
+    {
+      "type": "custom",
+      "format": "\u001b[90m└──────────────────────────────────────────────────┘"
+    },
+    {
+      "type": "custom",
+      "format": "\u001b[90m┌─────────────────── System ───────────────────────┐"
+    },
+    {
+      "type": "uptime",
+      "key": "󱫐 Uptime",
+      "keyColor": "red"
+    },
+    {
+      "type": "localip",
+      "key": "󰩟 Local IP",
+      "keyColor": "red"
+    },
+    {
+      "type": "poweradapter",
+      "key": "󰚥 AC Adapter",
+      "keyColor": "red"
+    },
+    {
+      "type": "custom",
+      "format": "\u001b[90m└──────────────────────────────────────────────────┘"
+    }
   ]
 }
