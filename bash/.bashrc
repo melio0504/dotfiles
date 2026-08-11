@@ -99,3 +99,6 @@ export PATH=$PATH:~/.spicetify
 # rust
 export PATH="$PATH:$HOME/.config/composer/vendor/bin"
 . "$HOME/.cargo/env"
+
+# opencode
+export PATH=/home/melio/.opencode/bin:$PATH
