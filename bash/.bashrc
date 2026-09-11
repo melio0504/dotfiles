@@ -62,16 +62,12 @@ alias ll="eza -lTa --icons --color=never --level=2"
 # All aboard the train choo choo
 alias lt="eza -laT --icons --color=never"
 
+# fastfetch
+alias ff="fastfetch"
+
 # nvim
 export PATH="$PATH:/opt/nvim/bin"
 alias n='nvim .'
-
-# fnm
-FNM_PATH="/home/melio/.local/share/fnm"
-if [ -d "$FNM_PATH" ]; then
-  export PATH="$FNM_PATH:$PATH"
-  eval "$(fnm env --shell bash)"
-fi
 
 # pnpm
 export PNPM_HOME="/home/melio/.local/share/pnpm"
@@ -93,12 +89,12 @@ export ANDROID_SDK_ROOT=$HOME/Android/Sdk
 export PATH=$PATH:$ANDROID_HOME/cmdline-tools/latest/bin
 export PATH=$PATH:$ANDROID_HOME/platform-tools
 
-# spicetify
-export PATH=$PATH:~/.spicetify
-
 # rust
 export PATH="$PATH:$HOME/.config/composer/vendor/bin"
 . "$HOME/.cargo/env"
 
 # opencode
 export PATH=/home/melio/.opencode/bin:$PATH
+
+# mise
+eval "$(/home/melio/.local/bin/mise activate bash)"
