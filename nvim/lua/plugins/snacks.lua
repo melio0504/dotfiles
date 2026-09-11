@@ -7,10 +7,11 @@ return {
     picker = {
       sources = {
         explorer = {
+          title = "Files",
           follow_file = false,
           layout = {
             layout = {
-              width = 30,
+              width = 25,
             },
           },
         },
