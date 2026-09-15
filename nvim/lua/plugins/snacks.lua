@@ -7,11 +7,24 @@ return {
     picker = {
       sources = {
         explorer = {
-          title = "Files",
           follow_file = false,
+          hidden = true,
+          toggles = {
+            hidden = false,
+            ignored = false,
+          },
           layout = {
+            auto_hide = { "input" },
             layout = {
               width = 25,
+            },
+          },
+          win = {
+            list = {
+              keys = {
+                ["i"] = "",
+                ["/"] = "",
+              },
             },
           },
         },
