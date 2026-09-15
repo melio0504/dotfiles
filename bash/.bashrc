@@ -7,7 +7,7 @@ esac
 # Show only last 2 directories in the path
 PROMPT_DIRTRIM=2
 
-# Add [] around prompt
+# Prompt
 PS1='[\u@\h \w]\$ '
 
 # don't put duplicate lines or lines starting with space in the history.
@@ -67,7 +67,8 @@ alias ff="fastfetch"
 
 # nvim
 export PATH="$PATH:/opt/nvim/bin"
-alias n='nvim .'
+alias n='nvim'
+alias nn='nvim .'
 
 # pnpm
 export PNPM_HOME="/home/melio/.local/share/pnpm"
