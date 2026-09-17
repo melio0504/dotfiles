@@ -9,10 +9,7 @@ return {
         explorer = {
           follow_file = false,
           hidden = true,
-          toggles = {
-            hidden = false,
-            ignored = false,
-          },
+          ignored = true,
           layout = {
             auto_hide = { "input" },
             layout = {
