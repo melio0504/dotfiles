@@ -2,7 +2,7 @@
 
 This repository contains my personal configuration files used for my programming environment. I like keeping things minimal but functional, so everything here is tuned for comfort, efficiency, and just enough personality to keep me sane.
 
-![Setup](/setup-snapshot/09-30-26.png)
+![Setup](/setup-snapshot/10-01-26.png)
 
 ### ThinkPad T480
 
@@ -17,4 +17,3 @@ For my desktop environment, I use GNOME. I really like its workflow, especially 
 ### Kitty
 
 Kitty is my terminal emulator of choice. What I like about it is how simple and straightforward the configuration is. My setup is intentionally minimal: no title bar, a completely black background, and no transparency. I basically want my terminal to feel like one giant fullscreen terminal whenever I’m using it. Another thing I really enjoy is its tab and pane workflow. Creating new tabs, splitting the terminal into panes, and keeping everything organized feels intuitive without requiring a complicated setup. Combined with its simple configuration file and keyboard shortcuts, it gives me pretty much everything I want from a terminal emulator without getting in my way.
-
