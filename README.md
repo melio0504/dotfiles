@@ -1,10 +1,10 @@
-## My Setup
+# My Setup
 
 This repository contains my personal configuration files used for my programming environment. I like keeping things minimal but functional, so everything here is tuned for comfort, efficiency, and just enough personality to keep me sane.
 
 ![Setup](/setup-snapshot/10-01-26.png)
 
-# ThinkPad T480
+## ThinkPad T480
 
 I’ve always loved ThinkPads, especially the older models. There’s just something about their simplicity, repairability, and durability that makes sense to me. And the keyboard? Still one of the best laptop keyboards out there. I’m currently using a ThinkPad T480. Yes! a laptop from 2018, and it’s still going strong. One feature I genuinely appreciate is the PowerBridge dual-battery system, which combines an internal battery with a removable external one. That means I can comfortably push long hours of usage without worrying too much. You can also just replace parts easily too.
 
