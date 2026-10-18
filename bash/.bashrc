@@ -41,6 +41,9 @@ if ! shopt -oq posix; then
   fi
 fi
 
+# tmux
+alias t="tmux"
+
 # eza - replacement for ls
 
 # Normal listing
