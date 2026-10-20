@@ -91,6 +91,9 @@ esac
 export BUN_INSTALL="$HOME/.bun"
 export PATH="$BUN_INSTALL/bin:$PATH"
 
+# mise
+eval "$(~/.local/bin/mise activate bash)"
+
 # flutter
 export PATH="$PATH:$HOME/flutter/bin"
 
