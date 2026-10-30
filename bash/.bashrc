@@ -73,18 +73,11 @@ export PATH="$PATH:/opt/nvim/bin"
 alias n='nvim'
 alias nn='nvim .'
 
-# fnm
-FNM_PATH="/home/melio/.local/share/fnm"
-if [ -d "$FNM_PATH" ]; then
-  export PATH="$FNM_PATH:$PATH"
-  eval "$(fnm env --shell bash)"
-fi
-
 # pnpm
-export PNPM_HOME="/home/melio/.local/share/pnpm"
+export PNPM_HOME='/home/melio/.local/share/pnpm'
 case ":$PATH:" in
-*":$PNPM_HOME:"*) ;;
-*) export PATH="$PNPM_HOME:$PATH" ;;
+":$PNPM_HOME/bin:"*) ;;
+*) export PATH="$PNPM_HOME/bin:$PATH" ;;
 esac
 
 # bun
