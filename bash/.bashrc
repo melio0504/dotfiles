@@ -106,3 +106,5 @@ export PATH=/home/melio/.opencode/bin:$PATH
 # yt-dlp
 export PATH="$PATH:/opt/yt-dlp"
 alias yt='yt-dlp_linux'
+
+[ -f "/home/melio/.ghcup/env" ] && . "/home/melio/.ghcup/env" # ghcup-env
