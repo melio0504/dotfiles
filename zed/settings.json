@@ -1,0 +1,68 @@
+// Zed settings
+//
+// For information on how to configure Zed, see the Zed
+// documentation: https://zed.dev/docs/configuring-zed
+//
+// To see all of Zed's default settings without changing your
+// custom settings, run `zed: open default settings` from the
+// command palette (cmd-shift-p / ctrl-shift-p)
+{
+  "cursor_shape": "block",
+  "on_new_window": "launchpad",
+  "vim_mode": true,
+  "project_panel": {
+    "button": true,
+    "git_status_indicator": true,
+    "folder_indicator": "icon",
+    "file_icons": true,
+    "dock": "left"
+  },
+  "outline_panel": {
+    "button": false,
+    "dock": "left"
+  },
+  "collaboration_panel": {
+    "button": false,
+    "dock": "left"
+  },
+  "agent": {
+    "threads_sidebar": {
+      "position": "left"
+    },
+    "dock": "right",
+    "favorite_models": [],
+    "model_parameters": []
+  },
+  "git_panel": {
+    "dock": "left"
+  },
+  "telemetry": {
+    "diagnostics": true,
+    "metrics": true,
+    "anthropic_retention": false
+  },
+  "terminal": {
+    "font_size": 16.0,
+    "font_family": "JetBrainsMonoNL Nerd Font Mono",
+    "blinking": "on"
+  },
+  "tabs": {
+    "activate_on_close": "left_neighbour"
+  },
+  "minimap": {
+    "show": "never"
+  },
+  "buffer_font_family": "JetBrainsMonoNL Nerd Font Mono",
+  "linked_edits": true,
+  "show_edit_predictions": false,
+  "soft_wrap": "editor_width",
+  "tab_size": 2,
+  "base_keymap": "Zed",
+  "ui_font_size": 18.0,
+  "buffer_font_size": 18.0,
+  "theme": {
+    "mode": "system",
+    "light": "Ayu Light",
+    "dark": "JetBrains Islands Dark",
+  },
+}
