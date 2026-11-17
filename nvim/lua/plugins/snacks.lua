@@ -1,6 +1,9 @@
 return {
   "folke/snacks.nvim",
   opts = {
+    scroll = {
+      enabled = false,
+    },
     image = {
       enabled = true,
     },
