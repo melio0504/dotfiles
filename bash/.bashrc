@@ -1,13 +1,13 @@
-# If not running interactively, don't do anything
+# if not running interactively, don't do anything
 case $- in
 *i*) ;;
 *) return ;;
 esac
 
-# Show only last 2 directories in the path
+# show only last 2 directories in the path
 PROMPT_DIRTRIM=2
 
-# Prompt
+# prompt string
 PS1='[\u@\h \w]\$ '
 
 # don't put duplicate lines or lines starting with space in the history.
@@ -41,70 +41,8 @@ if ! shopt -oq posix; then
   fi
 fi
 
-# tmux
-alias t="tmux"
+# load environment variables
+[ -f ~/.bash_exports ] && source ~/.bash_exports
 
-# eza - replacement for ls
-
-# Normal listing
-alias ls="eza -lT --icons --color=never --level=1"
-
-# With hidden files
-alias la="eza -lTa --icons --color=never --level=1"
-
-# Sorted by size (from lowest to highest)
-alias lsize="eza -lTa --total-size --sort=size --no-user \
-            --icons --color=never --level=1"
-
-# Sorted by time (from oldest to newest)
-alias ltime="eza -lTa --sort=modified --icons --color=never --level=1"
-
-# List with two levels
-alias ll="eza -lTa --icons --color=never --level=2"
-
-# All aboard the train choo choo
-alias lt="eza -laT --icons --color=never"
-
-# fastfetch
-alias ff="fastfetch"
-
-# nvim
-export PATH="$PATH:/opt/nvim/bin"
-alias n='nvim'
-alias nn='nvim .'
-
-# pnpm
-export PNPM_HOME='/home/melio/.local/share/pnpm'
-case ":$PATH:" in
-":$PNPM_HOME/bin:"*) ;;
-*) export PATH="$PNPM_HOME/bin:$PATH" ;;
-esac
-
-# bun
-export BUN_INSTALL="$HOME/.bun"
-export PATH="$BUN_INSTALL/bin:$PATH"
-
-# mise
-eval "$(~/.local/bin/mise activate bash)"
-
-# flutter
-export PATH="$PATH:$HOME/flutter/bin"
-
-# android
-export ANDROID_HOME=$HOME/Android/Sdk
-export ANDROID_SDK_ROOT=$HOME/Android/Sdk
-export PATH=$PATH:$ANDROID_HOME/cmdline-tools/latest/bin
-export PATH=$PATH:$ANDROID_HOME/platform-tools
-
-# rust
-export PATH="$PATH:$HOME/.config/composer/vendor/bin"
-. "$HOME/.cargo/env"
-
-# opencode
-export PATH=/home/melio/.opencode/bin:$PATH
-
-# yt-dlp
-export PATH="$PATH:/opt/yt-dlp"
-alias yt='yt-dlp_linux'
-
-[ -f "/home/melio/.ghcup/env" ] && . "/home/melio/.ghcup/env" # ghcup-env
+# load aliases
+[ -f ~/.bash_aliases ] && source ~/.bash_aliases

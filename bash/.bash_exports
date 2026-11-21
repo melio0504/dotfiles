@@ -1,0 +1,35 @@
+# nvim
+export PATH="$PATH:/opt/nvim/bin"
+
+# rust
+export PATH="$PATH:$HOME/.config/composer/vendor/bin"
+. "$HOME/.cargo/env"
+
+# haskell
+[ -f "/home/melio/.ghcup/env" ] && . "/home/melio/.ghcup/env"
+
+# mise
+eval "$(~/.local/bin/mise activate bash)"
+
+# pnpm
+export PNPM_HOME='/home/melio/.local/share/pnpm'
+case ":$PATH:" in
+":$PNPM_HOME/bin:"*) ;;
+*) export PATH="$PNPM_HOME/bin:$PATH" ;;
+esac
+
+# bun
+export BUN_INSTALL="$HOME/.bun"
+export PATH="$BUN_INSTALL/bin:$PATH"
+
+# android
+export ANDROID_HOME=$HOME/Android/Sdk
+export ANDROID_SDK_ROOT=$HOME/Android/Sdk
+export PATH=$PATH:$ANDROID_HOME/cmdline-tools/latest/bin
+export PATH=$PATH:$ANDROID_HOME/platform-tools
+
+# flutter
+export PATH="$PATH:$HOME/flutter/bin"
+
+# yt-dlp
+export PATH="$PATH:/opt/yt-dlp"
