@@ -33,3 +33,6 @@ export PATH="$PATH:$HOME/flutter/bin"
 
 # yt-dlp
 export PATH="$PATH:/opt/yt-dlp"
+
+# opencode
+export PATH=/home/melio/.opencode/bin:$PATH
